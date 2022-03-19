@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>662</width>
+    <height>336</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>662</width>
+    <height>336</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>662</width>
+    <height>336</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+    <pointsize>10</pointsize>
+    <bold>false</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>AccountBox v1.1</string>
+  </property>
+  <widget class="QWidget" name="layout">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QGroupBox" name="infoGroup">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>8</y>
+      <width>270</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>账号列表</string>
+    </property>
+    <widget class="QScrollArea" name="infoScrollBox">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>19</y>
+       <width>250</width>
+       <height>260</height>
+      </rect>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="accountScroll">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>248</width>
+        <height>258</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <widget class="QListWidget" name="accountScrollObj">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>-1</x>
+         <y>-1</y>
+         <width>250</width>
+         <height>260</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="buttonAbout">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>75</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>关于</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="actionGroup">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>8</y>
+      <width>360</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QTabWidget" name="actionTab">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>340</width>
+       <height>290</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="editTab">
+      <attribute name="title">
+       <string>编辑</string>
+      </attribute>
+      <widget class="QTextEdit" name="tipObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="tipLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>备注</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="accountLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>账号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="accountObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="pwdObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>70</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="pwdLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>密码</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonEdit">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>230</y>
+         <width>75</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>保存</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="titleLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="titleObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>180</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>编辑选中账户的内容</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonDelete">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>230</y>
+         <width>75</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>删除选中</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="addTab">
+      <attribute name="title">
+       <string>添加</string>
+      </attribute>
+      <widget class="QTextEdit" name="newTipObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>100</y>
+         <width>251</width>
+         <height>71</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="newTipLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>备注</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="newPwdLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>密码</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newAccountObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>40</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="newAccountLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>账号</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newPwdObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>70</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonAdd">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>230</y>
+         <width>75</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>添加</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="newTitleLabel">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>53</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="newTitleObj">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>251</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>SizeVerCursor</cursorShape>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>180</y>
+         <width>81</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>添加新的账户</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
